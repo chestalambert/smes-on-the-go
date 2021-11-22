@@ -23,14 +23,14 @@ var SMESGMap = function(elementId, options) {
 
 
   smesGMap.setupMapStyles();
-  smesGMap.mapStyleName = mapState.mapStyleName || "iovation";
+  smesGMap.mapStyleName = mapState.mapStyleName || "hybrid";
 
   options = options || {};
 
   options.mapOptions = options.mapOptions || {
     center: mapCenter,
     zoom: mapState.zoom || 15,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    mapTypeId: google.maps.MapTypeId.HYBRID,
 
     mapTypeControl: false,
     zoomControl: true,
